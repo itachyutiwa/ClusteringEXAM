@@ -1,0 +1,33 @@
+---
+title: "EXAMEN DE CLUSTERING SESSION 1"
+author: "MASTER 2 DATA-SCIENCE (INP-HB Côte D’Ivoire)<br> Présentateur: KONE GOMPOU LOUA ALASSANE <br> Professeur: M.Monsan Vincent"
+date: " Date du jour : `r Sys.Date()`"
+output:
+  prettydoc::html_pretty:
+    theme: architect
+    highlight: github
+---
+
+# EXERCICE 3
+#IMPORTATION DES LIBRAIRIE
+```{r}
+library(dplyr)
+library(FactoMineR)
+library(ggplot2)
+library(factoextra)
+library(Hmisc)
+library(corrplot)
+
+library(rmdformats)
+```
+
+1.Importation du fichier <<fromage.txt>>
+```{r}
+setwd("./KONEGOMPOU")
+fromage <- read.table(file="fromage.txt",header=T,row.names=1,sep="\t",dec=".")
+
+
+```
+
+
+ 
